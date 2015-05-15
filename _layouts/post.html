@@ -38,19 +38,11 @@
 				</div>
 			</header>
 			<div class="wrap">
+				<h1>{{ page.title | upcase }}</h1>
+				<h5>{{ page.date | date: "%B. %d, %Y" }}</h5>
 				<section class="blog-content">
 					{{ content }}				
 				</section>
-				<!-- <aside class="blog-sidebar">
-					<section class="my-info">
-						<img src="/img/mypic.jpg"/>
-						<p>爱哭，爱闹，爱傻笑</p>
-					</section>
-					<section class="blog-category" style="display: none;">
-					</section>
-					<section class="blog-tags" style="display: none;">
-					</section>
-				</aside> -->
 				<div class="clearfix"></div>
 			</div>
 		</div>

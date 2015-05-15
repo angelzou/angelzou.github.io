@@ -2,13 +2,54 @@
 layout: default
 title: Angel Zou
 ---
-<div id="home">
-	<h1>Blog Posts</h1>
-	<ul>
-	  {% for post in site.posts %}
-	    <li>
-	      <a href="{{ post.url }}">{{ post.title }}</a>
-	    </li>
-	  {% endfor %}
-	</ul>
+
+{% for post in paginator.posts %}
+<div class="an-post">
+	<h3><a href="{{ post.url }}">{{ post.title | upcase }}</a></h3>
+	<h5>{{ post.date | date: "%B. %d, %Y" }}</h5>
+	<!-- 截取摘要 -->
+	{% if site.excerpt_separator %}
+        {{ post.excerpt }}
+    {% else %}
+        {{ post.content }}
+    {% endif %}
+  	<a class="more" href="{{ post.url }}">Continue Reading →</a><span></span>
+</div>
+{% endfor %}
+
+<div id="post-pagination" class="pagination">
+{% if paginator.total_pages > 1%}
+  {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+        <a class="previous" href="/">Previous</a>
+      {% else %}
+        <a class="previous" href="{{ paginator.previous_page_path }}">Previous</a>
+      {% endif %}
+  {% else %}
+      <span class="previous">Previous</span>
+  {% endif %}
+  <ul class="pages">
+    <li class="page">
+      {% if paginator.page == 1 %}
+        <span class="current-page">1</span>
+      {% else %}
+        <a href="/">1</a>
+      {% endif %}
+    </li>
+    {% for count in (2..paginator.total_pages) %}
+      <li class="page">
+        {% if count == paginator.page %}
+          <span class="current-page">{{ count }}</span>
+        {% else %}
+          <a href="/page{{ count }}">{{ count }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+  {% if paginator.next_page %}
+      <a class="next" href="{{ paginator.next_page_path }}">Next</a>
+  {% else %}
+      <span class="next">Next</span>
+  {% endif %}
+{% endif %}
 </div>
