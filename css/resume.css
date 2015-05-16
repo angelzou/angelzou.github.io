@@ -93,7 +93,7 @@
 }
 .active.an-project h1 {
 	position: absolute;
-	top: 100px;
+	top: 50px;
 	left: 120px;
 	font-size: 2.5em;
 	font-weight: 300;
@@ -111,7 +111,7 @@
 }
 .active.an-project .timeline {
 	position: absolute;
-	top: 200px;
+	top: 100px;
 	left: 80px;
 	height: 70%;
 	border-left: #4b8aaf 2px dotted;
