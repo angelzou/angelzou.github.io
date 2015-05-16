@@ -261,29 +261,29 @@
 }
 @-webkit-keyframes 'info-in' {
 	0% {
-		-webkit-transform: translateX(700px) rotate(60deg);
+		-webkit-transform: translateX(700px);
 		opacity: 0;
 	}
 	50% {
-		-webkit-transform: translateX(400px) rotate(30deg);
+		-webkit-transform: translateX(400px);
 		opacity: .5;
 	}
 	100% {
-		-webkit-transform: translateX(0) rotate(0);
+		-webkit-transform: translateX(0);
 		opacity: 1;
 	}
 }
 @-moz-keyframes 'info-in' {
 	0% {
-		-webkit-transform: translateX(700px) rotate(60deg);
+		-webkit-transform: translateX(700px);
 		opacity: 0;
 	}
 	50% {
-		-webkit-transform: translateX(400px) rotate(30deg);
+		-webkit-transform: translateX(400px);
 		opacity: .5;
 	}
 	100% {
-		-webkit-transform: translateX(0) rotate(0);
+		-webkit-transform: translateX(0);
 		opacity: 1;
 	}
 }
