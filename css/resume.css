@@ -93,9 +93,9 @@
 }
 .active.an-project h1 {
 	position: absolute;
-	top: 50px;
+	top: 40px;
 	left: 120px;
-	font-size: 2.5em;
+	font-size: 2.2em;
 	font-weight: 300;
 	letter-spacing: 2px;
 	color: #4b8aaf;
@@ -121,9 +121,9 @@
 	transition-delay: .5s;
 }
 .timeline h3 {
-	margin: 2em 0;
+	margin: 1.2em 0;
 	position: relative;
-	line-height: 40px;
+	line-height: 30px;
 	padding-left: 40px;
 	color: #4b8aaf;
 }
@@ -142,7 +142,7 @@
 }
 .an-pro-content {
 	padding: 0 40px;
-	font-size: 1.2em;
+	font-size: 1em;
 }
 .an-skill {
     background: url(/img/resume-1.jpg) no-repeat;
