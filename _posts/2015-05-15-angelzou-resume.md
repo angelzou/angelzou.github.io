@@ -71,6 +71,7 @@ title: angelzou's resume
 </div>
 <script type="text/javascript">
     $(function() {
+        //全屏滚动插件
         $("#angel-resume").fullpage({
             anchors: ['page1', 'page2', 'page3', 'page4'],
             resize: true,
