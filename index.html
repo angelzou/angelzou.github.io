@@ -9,14 +9,14 @@ title: Angel Zou
 	<h5>{{ post.date | date: "%B. %d, %Y" }}</h5>
 	<!-- 截取摘要 -->
 	{% if site.excerpt_separator %}
-        {{ post.excerpt }}
+        <p>{{ post.excerpt | strip_html }}</p>
     {% else %}
-        {{ post.content }}
+        <p>{{ post.content | strip_html }}</p>
     {% endif %}
   	<a class="more" href="{{ post.url }}">Continue Reading →</a><span></span>
 </div>
 {% endfor %}
-
+<!--分页-->
 <div id="post-pagination" class="pagination">
 {% if paginator.total_pages > 1%}
   {% if paginator.previous_page %}
