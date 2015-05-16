@@ -64,7 +64,6 @@ title: angelzou's resume
             <p class="an-contact-info">Email:  yuweizou.cn@gmail.com</p>
             <p class="an-contact-info">Tel: 134 1960 0534</p>
             <p class="an-contact-info">QQ: 125628154</p>
-            <p class="an-contact-info">QQ: 125628154</p>
             <p class="an-contact-info"><a href="http://weibo.com/2384822075/profile?topnav=1&wvr=6">新浪微博：AngelZywei</a></p>
             <p class="an-contact-info"><a href="/files/angelzou-resume.pdf">我的简历</a></p>
         </div>
