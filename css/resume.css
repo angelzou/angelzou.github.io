@@ -1,3 +1,10 @@
+/*覆盖fullpage自己设置的slide的高度*/
+.an-info,
+.an-project,
+.an-skill,
+.an-contact {
+	height: 100% !important;
+}
 .an-info
 {
     background: url(/img/wild-camp.jpg) no-repeat;
