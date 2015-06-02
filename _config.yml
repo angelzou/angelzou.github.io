@@ -1,5 +1,5 @@
 markdown: rdiscount
-highlighter: true
+highlighter: pygments
 permalink: /:month-:day-:year-:title.html
 paginate: 7
 paginate_path: "page:num"

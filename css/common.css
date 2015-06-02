@@ -136,6 +136,10 @@ body {
 .page-wrapper .wrap {
 	min-height: 500px;
 }
+.wrap h5 img{
+	height: 16px;
+	padding-right: 10px;
+}
 .blog-header {
 	background: #303538 no-repeat 10% 40%;
 	background-image: url(/img/mypic-3.jpg);
@@ -159,6 +163,72 @@ body {
 	vertical-align: middle;
 	position: relative;
 	top: -2%;
+}
+.blog-content h3 {
+	font-size: 1.5em;
+	padding: 5px 0;
+	border-bottom: 1px solid #eee;
+}
+pre {
+	margin: 1.6em 0;
+	width: 100%;
+	padding: 10px 20px;
+	font-size: 1em;
+	color: #000;
+	line-height: 1.5em;
+	white-space: pre;
+	overflow: auto;
+	background: #d0e0f0;
+	border-radius: 8px;
+}
+.blog-content pre code {
+	overflow-x: auto;
+	padding: .5em;
+	color: #000;
+	background: transparent;
+	white-space: pre-wrap;
+}
+.blog-content p img {
+	display: inline-block;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+.blog-content a {
+	color: #3079c1;text-decoration: none;
+}
+.blog-content a:hover {
+	color: #5BA4E5;
+}
+.blog-content code {
+	padding: .05em .15em;
+	font-family: monospace,Inconsolata,sans-serif;
+	font-size: .85em;
+	white-space: pre-wrap;
+	border: .05em solid #e2e2e2;
+	background: #E2EDF2;
+	border-radius: .1em;
+	-webkit-border-radius: .1em;
+	-moz-border-radius: .1em;
+}
+.blog-content ol,.blog-content ul {
+	margin: 1.8em 0;padding-left: 2.4em;
+}
+.blog-content blockquote {
+	margin: 1.75em 0;
+	padding: 0.8em 1.75em 0.8em 1.75em;
+	border-left: solid .4em #4a4a4a;
+	background: #D6EDFF;
+	color: #111;
+}
+.blog-content blockquote p {
+	margin: 0;
+}
+.blog-content img {
+	display: block;
+	max-width: 100%;
+	margin:0 auto;
+	height: auto;
 }
 /*footer*/
 #global-footer {

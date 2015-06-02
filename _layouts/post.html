@@ -6,11 +6,14 @@
 	<title>{{ page.title }}</title>
 	<meta name="viewport" content="width=device-width">
 	<meta name="author" content="Angel Zou" />
-	<link rel="stylesheet" href="/css/common.css">
 	<link rel="stylesheet" href="/css/normalize.css">
 	<link rel="stylesheet" href="/css/screen.css">
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="/css/font-icons/icon.css" />
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
 	<header id="global-header" class="navbar">
@@ -39,7 +42,7 @@
 			</header>
 			<div class="wrap">
 				<h1>{{ page.title | upcase }}</h1>
-				<h5>{{ page.date | date: "%B. %d, %Y" }}</h5>
+				<h5><img src="/img/calendar2.png">{{ page.date | date: "%B. %d, %Y" }}</h5>
 				<section class="blog-content">
 					{{ content }}				
 				</section>
