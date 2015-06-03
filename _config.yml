@@ -1,4 +1,6 @@
-markdown: rdiscount
+markdown: redcarpet
+redcarpet:
+    extensions: ["fenced_code_blocks", "tables", "highlight", "with_toc_data", "strikethrough", "underline"]
 highlighter: pygments
 permalink: /:month-:day-:year-:title.html
 paginate: 7
