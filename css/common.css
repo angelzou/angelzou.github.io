@@ -179,6 +179,7 @@ body {
 pre {
 	margin: 1.6em 0;
 	width: 100%;
+	max-height: 800px;
 	padding: 10px 20px;
 	font-size: 1.1em;
 	color: #000;
