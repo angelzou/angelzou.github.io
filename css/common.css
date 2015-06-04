@@ -136,6 +136,9 @@ body {
 }
 .page-wrapper .wrap {
 	min-height: 500px;
+	margin-bottom: 60px;
+	padding-bottom: 40px;
+	/*border-bottom: 1px solid #eee;*/
 }
 .wrap h5 img{
 	height: 16px;
@@ -177,13 +180,17 @@ pre {
 	margin: 1.6em 0;
 	width: 100%;
 	padding: 10px 20px;
-	font-size: 1em;
+	font-size: 1.1em;
 	color: #000;
 	line-height: 1.5em;
 	white-space: pre;
 	overflow: auto;
-	background: #d0e0f0;
+	background: #f9f9f9;
 	border-radius: 8px;
+}
+code, 
+pre {
+	font-family: Menlo, Monaco, "Courier New", monospace;
 }
 .blog-content pre code {
 	overflow-x: auto;
@@ -223,14 +230,13 @@ pre {
 .blog-content ul li {
 	margin-bottom: 8px;
 }
-.blog-content blockquote {
+blockquote {
 	margin: 1.75em 0;
 	padding: 0.8em 1.75em 0.8em 1.75em;
-	border-left: solid .4em #4a4a4a;
-	background: #D6EDFF;
-	color: #111;
+	border-left: solid .4em #dff0d8;
+	color: #7a7a7a;
 }
-.blog-content blockquote p {
+blockquote p {
 	margin: 0;
 }
 .blog-content img {
