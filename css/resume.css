@@ -27,7 +27,7 @@ h3{margin:0;font-weight:bold;font-size:2.4em;text-align:center;}
 .timeline:before{content:'';display:block;position:absolute;top:0;left:30px;width:2px;height:100%;background:#ed5565;}
 .timeline li{padding:0 32px;}
 .event-time{position:relative;font-size:2em;}
-.event-time .icon-calendar:before{position:absolute;left:-14px;background-color:#f0f0e8;}
+.event-time .icon-calendar:before{position:absolute;left:-11px;background-color:#f0f0e8;}
 .timeline h4,.timeline p{margin-left:35px;}
 .timeline p{padding:32px 0;}
 .timeline h4{font-size:1.5em;font-weight:bold;}
