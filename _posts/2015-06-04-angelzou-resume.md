@@ -3,10 +3,10 @@ layout: bootstrap
 title: angelzou's resume
 ---
 <div class="intro">
-	<div class="name">
+	<div class="name container">
 		<div class="row">
 			<div class="col-md-12">
-				<h2>ANGEL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ZOU</h2>
+				<h2>ANGEL&nbsp;ZOU</h2>
 				<div class="line"></div>
 			</div>
 		</div>
