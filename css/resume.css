@@ -50,9 +50,9 @@ label{position:absolute;top:0;right:0;bottom:0;width:1px;background-color:#d9dbd
     .social-container ul{font-size:20px;}
     .social-container li{margin:0 10px;}
     .intro .name{top:100px;}
-    .line{width:288px;}
+    .line{width:278px;}
     h2{font-size:3em;}
-    .t-middle{font-size:1.6em;letter-spacing: 5px;}
+    .t-middle{font-size:1.6em;letter-spacing: 4.5px;}
     .aboutme .content{font-size:1.3em;}
     .timeline{margin:0 10px;}
 }
