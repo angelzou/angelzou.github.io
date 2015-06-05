@@ -1,29 +1,4 @@
 {% include head.html %}
-<body>
-	<header id="global-header" class="navbar">
-		<nav role="navigation">
-			<div class="wrapper-nav">
-				<a class="my-logo icon-droplet" href="index.html">AngelZou</a>
-				<button type="button" class="mobile-menu icon-menu hidden" title="菜单">
-					<span class="hidden">菜单</span>
-				</button>
-				<ul id="main-menu" class="navbar-collapse collapse">
-					<li><a href="index.html">INDEX</a></li>
-					<!-- <li><a href="#">标签</a></li> -->
-					<li><a href="category.html">CATEGORY</a></li>
-					<li><a href="about-me.html">ABOUT ME</a></li>
-				</ul>
-			</div>
-		</nav>
-	</header>
-	<div class="main">
-		<div class="page-wrapper">
-			<header class="blog-header">
-				<div class="vertical">
-					<h1>Keep moving, Keep studying!
-					</h1>
-				</div>
-			</header>
 			<div class="wrap">
 				<h1>{{ page.title | upcase }}</h1>
 				<h5><img src="/img/calendar2.png">{{ page.date | date: "%B. %d, %Y" }}</h5>
