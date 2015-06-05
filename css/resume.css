@@ -1,296 +1,58 @@
-/*覆盖fullpage自己设置的slide的高度*/
-.an-info,
-.an-project,
-.an-skill,
-.an-contact {
-	height: 100% !important;
-}
-.an-info
-{
-    background: url(/img/wild-camp.jpg) no-repeat;
-    background-size: cover;
-}
-.an-info-content {
-	margin: 0 auto;
-	width: 80%;
-}
-.active .an-info-content h1,
-.active .an-info-content h3,
-.active .an-info-content h4 {
-	-webkit-transform: scale(0.5, 0.5);
-	-moz-transform: scale(0.5, 0.5);
-	transform: scale(0.5, 0.5);
-	-webkit-animation: an-info-content 1s linear 0s 1 forwards;
-	-moz-animation: an-info-content 1s linear 0s 1 forwards;
-	animation: an-info-content 1s linear 0s 1 forwards;
-}
-.an-info-content h1 {
-	font-size: 4em;
-	text-align: center;
-	letter-spacing: -2px;
-	color: #fff;
-}
-.an-info-content h3 {
-	font-size: 2.4em;
-	font-family: sans-serif;
-	text-align: center;
-	color: #ddd;
-}
-.an-info-content h4 {
-	margin: 1.5em auto;
-	width: 80%;
-	color: #197bc8;
-}
-.an-social {
-	margin: 0 auto;
-	width: 35%;
-	overflow: hidden;
-	list-style: none;
-}
-.active .an-social {
-	-webkit-transform: translateY(400px);
-	-moz-transform: translateY(400px);
-	transform: translateY(400px);
-	-webkit-animation: an-social 1s linear .7s 1 forwards;
-	-moz-animation: an-social 1s linear .7s 1 forwards;
-	animation: an-social 1s linear .7s 1 forwards;
-}
-.an-social li {
-	width: 33.33%;
-	float: left;
-	text-align: center;
-}
-.an-social a {
-	text-decoration: none;
-	font-size: 2em;
-	color: #fff;
-}
-.an-social a:hover {
-	color: #197bc8;
-}
-.an-pro-timeline {
-	position: relative;
-	margin: 0 auto;
-	width: 65%;
-	height: 100%;
-}
-@media only screen and (max-width:600px) {
-	.an-pro-timeline {
-		width: 85%;
-	}
-}
-@media only screen and (max-width:800px) and (min-width: 600px) {
-	.an-pro-timeline {
-		width: 75%;
-	}
-}
-.an-project
-{
-	position: relative;
-    background: url(/img/old_wall.jpg) repeat top left;
-}
-.an-project h1 {
-	font-size: 2.5em;
-	font-weight: 300;
-	letter-spacing: 2px;
-	-webkit-transform: translateX(-700px);
-	-moz-transform: translateX(-700px);
-	transfrom: translateX(-700px);
-	transition: all 1s linear;
-}
-.active.an-project h1 {
-	position: absolute;
-	top: 40px;
-	left: 120px;
-	font-size: 2.2em;
-	font-weight: 300;
-	letter-spacing: 2px;
-	color: #4b8aaf;
-	-webkit-transform: translateX(0);
-	-moz-transform: translateX(0);
-	transfrom: translateX(0);
-}
-.an-project .timeline {
-	-webkit-transform: translateX(700px);
-	-moz-transform: translateX(700px);
-	transfrom: translateX(700px);
-	transition: all 1s linear;
-}
-.active.an-project .timeline {
-	position: absolute;
-	top: 100px;
-	left: 80px;
-	height: 70%;
-	border-left: #4b8aaf 2px dotted;
-	-webkit-transform: translateX(0);
-	-moz-transform: translateX(0);
-	transfrom: translateX(0);
-	transition-delay: .5s;
-}
-.timeline h3 {
-	margin: 1.2em 0;
-	position: relative;
-	line-height: 30px;
-	padding-left: 40px;
-	color: #4b8aaf;
-}
-.an-pro-bg {
-	position: absolute;
-	top: 0;
-	left: -35px;
-	width: 69px;
-	height: 47px;
-	background: url(/img/cal_icon.png)
-}
-.an-pro-date {
-	margin-right: 15px;
-	display: inline-block;
-	color: #797979;
-}
-.an-pro-content {
-	padding: 0 40px;
-	font-size: 1em;
-}
-.an-skill {
-    background: url(/img/resume-1.jpg) no-repeat;
-    background-size: cover;
-}
-.an-contact {
-    background: url(/img/resume-3_h.jpg) no-repeat;
-    background-size: cover;
-}
-.an-skill-content {
-	margin: 0 auto;
-	width: 85%;
-	text-align: center;
-	color: #fff;
-}
-.an-skill-content h1 {
-	font-size: 3em;
-	font-weight: 300;
-	letter-spacing: 2px;
-	color: #197bc8;
-}
-.an-skill-info {
-	font-size: 1.5em;
-}
-.active .info-1 {
-	-webkit-transform: translateX(700px);
-	-moz-transform: translateX(700px);
-	transform: translateX(700px);
-	-webkit-animation: info-in .4s ease-out .4s 1 forwards;
-	-moz-animation: info-in .4s ease-out .4s 1 forwards;
-	animation: info-in .4s ease-out .4s 1 forwards;
-}
-.active .info-2 {
-	-webkit-transform: translateX(700px);
-	-moz-transform: translateX(700px);
-	transform: translateX(700px);
-	-webkit-animation: info-in .4s ease-out .9s 1 forwards;
-	-moz-animation: info-in .4s ease-out .9s 1 forwards;
-	animation: info-in .4s ease-out .9s 1 forwards;
-}
-.active .info-3 {
-	-webkit-transform: translateX(700px);
-	-moz-transform: translateX(700px);
-	transform: translateX(700px);
-	-webkit-animation: info-in .4s ease-out 1.5s 1 forwards;
-	-moz-animation: info-in .4s ease-out 1.5s 1 forwards;
-	animation: info-in .4s ease-out 1.5s 1 forwards;
-}
-.an-contact-content {
-	margin: 0 auto;
-	width: 85%;
-	text-align: center;
-	color: #fff;
-}
-.my-pic {
-	width: 120px;
-	-webkit-border-radius: 60px;
-	-moz-border-radius: 60px;
-	border-radius: 60px;
-}
-.an-contact-info {
-	font-size: 1.5em;
-}
-.an-contact-info a {
-	text-decoration: none;
-	color: #197bc8;
-}
-/*animation动画需要的keyframes*/
-@-webkit-keyframes 'an-info-content' {
-	0% {
-		-webkit-transform: scale(0.3, 0.3);
-		opacity: 0;
-	}
-	50% {
-		-webkit-transform: scale(0.7, 0.7);
-		opacity: .5;
-	}
-	100% {
-		-webkit-transform: scale(1, 1);
-		opacity: 1;
-	}
-}
-@-moz-keyframes 'an-info-content' {
-	0% {
-		-webkit-transform: scale(0.3, 0.3);
-		opacity: 0;
-	}
-	50% {
-		-webkit-transform: scale(0.7, 0.7);
-		opacity: .5;
-	}
-	100% {
-		-webkit-transform: scale(1, 1);
-		opacity: 1;
-	}
-}
-@-webkit-keyframes 'an-social' {
-	0% {
-		-webkit-transform: translateY(400px);
-		opacity: 0;
-	}
-	100% {
-		-webkit-transform: translateY(0);
-		opacity: 1;
-	}
-}
-@-moz-keyframes 'an-social' {
-	0% {
-		-webkit-transform: translateY(400px);
-		opacity: 0;
-	}
-	100% {
-		-webkit-transform: translateY(0);
-		opacity: 1;
-	}
-}
-@-webkit-keyframes 'info-in' {
-	0% {
-		-webkit-transform: translateX(700px);
-		opacity: 0;
-	}
-	50% {
-		-webkit-transform: translateX(400px);
-		opacity: .5;
-	}
-	100% {
-		-webkit-transform: translateX(0);
-		opacity: 1;
-	}
-}
-@-moz-keyframes 'info-in' {
-	0% {
-		-webkit-transform: translateX(700px);
-		opacity: 0;
-	}
-	50% {
-		-webkit-transform: translateX(400px);
-		opacity: .5;
-	}
-	100% {
-		-webkit-transform: translateX(0);
-		opacity: 1;
-	}
+html,body{width:100%;height:100%;margin:0;padding:0;}
+
+/*首页*/
+.intro{position:relative;width:100%;height:100%;text-align:center;background-color:#7acdc8;color:#000;letter-spacing:4px;word-break:break-all;}
+.intro .row{margin-bottom:10px;}
+.intro .name{position:relative;top:200px;}
+.t-middle{font-size:2em;letter-spacing:6px;}
+.line{background-color:#5b9bbc;width:340px;height:2px;margin:0 auto;}
+.social{position:absolute;bottom:0;left:0;right:0;width:100%;height:80px;overflow:hidden;background:rgba(0,0,0,.4);display:block;}
+.social ul{margin:20px 0;padding:0;width:100%;list-style:none;overflow:hidden;font-size:30px;}
+.social-container li{display:inline-block;height:40px;margin:0 15px;line-height:30px;}
+.social-container{width:85%;height:100%;margin:0 auto;text-align:center;overflow:hidden;}
+.social-container a{text-decoration:none;color:#fff;}
+.social-container a:hover{color:#11abb0;}
+
+/*工作经历*/
+.experience{background-color:#f0f0e8;}
+.experience .container{padding:2em 0;}
+.experience .col-md-8{padding:0;}
+.p-relative{position:relative;}
+.content h4{font-weight:bold;}
+.content span{display:inline-block;font-size:1.5em;color:#7acdc8;}
+.experience ul{list-style:none;margin:0;padding:0;}
+.experience h3{padding-bottom:24px;}
+h3{margin:0;font-weight:bold;font-size:2.4em;text-align:center;}
+.timeline{position:relative;}
+.timeline:before{content:'';display:block;position:absolute;top:0;left:30px;width:2px;height:100%;background:#ed5565;}
+.timeline li{padding:0 32px;}
+.event-time{position:relative;font-size:2em;}
+.event-time .icon-calendar:before{position:absolute;left:-14px;background-color:#f0f0e8;}
+.timeline h4,.timeline p{margin-left:35px;}
+.timeline p{padding:32px 0;}
+.timeline h4{font-size:1.5em;font-weight:bold;}
+.time{margin-left:35px;color:#02918C;}
+
+/*about me*/
+.skill,.aboutme{padding:4em 0 5em;text-align:center;}
+h2{font-weight:bold;font-size:3.75em;}
+.skill h2,.aboutme h2,.experience h3{color:#02918C;}
+.aboutme .content{font-size:1.5em;margin-top:20px;}
+.aboutme .col-md-3{padding:15px 0;}
+.aboutme h3{color:#7acdc8;}
+.aboutme p{font-size:1.1em;margin:15px 0;}
+.dashed{margin:0 auto;width:240px;border:1px dashed rgba(2,145,140,.4);}
+.my-pic{margin:20px 0;display:inline-block;height:100px;width:100px;border-radius:50px;}
+label{position:absolute;top:0;right:0;bottom:0;width:1px;background-color:#d9dbdb;}
+.skill p{margin:20px;font-size:1.5em;}
+@media only screen and (max-width:480px){
+    .social-container{width:100%;}
+    .social-container ul{font-size:20px;}
+    .social-container li{margin:0 10px;}
+    .intro .name{top:100px;}
+    .line{width:210px;}
+    h2{font-size:3em;}
+    .t-middle{font-size:1.6em;}
+    .aboutme .content{font-size:1.3em;}
+    .timeline{margin:0 10px;}
 }

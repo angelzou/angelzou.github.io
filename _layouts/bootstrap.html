@@ -2,39 +2,31 @@
 <html>
 <head>
 	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="author" content="Angel Zou" />
 	<title>{{ page.title }}</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="/css/screen.css">
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
 	<!-- 新 Bootstrap 核心 CSS 文件 -->
 	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<!-- 可选的Bootstrap主题文件（一般不用引入） -->
 	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/resume.css">
 	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
 	<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
 	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 	<script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<style type="text/css">
-	 .carousel-inner>.item>a>img,
-	 .carousel-inner>.item>img {
-	 	margin: 0 auto;
-	}
-	.love-speak {
-		margin-top: 30px;
-		font-size: 2em;
-		font-weight: bold;
-		color: #5f93b7;
-		text-align: center;
-	}
-	.an-back {
-		font-size: 1.2em;
-		color: #5f93b7;
-		text-align: right;
-		padding: 1em 2em;
-	}
-	.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
-		max-width: none;
-	}
-</style>
 </head>
 <body>
 	{{content}}
+	<div class="container">
+		<div class="row">
+			{% include disqus_comments.html %}
+		</div>
+	</div>
+	{% include google_analytics.html %}
+	{% include foot.html %}
 </body>
 </html>
