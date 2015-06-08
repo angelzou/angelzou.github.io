@@ -1,4 +1,3 @@
-var pagenum = getUrlParam('pagenum');
 $(".mobile-menu").click(function(){
 	var $main_menu = $("#main-menu");
 	if(!$main_menu.is(":visible")){
