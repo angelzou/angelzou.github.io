@@ -6,7 +6,7 @@ title: Angel Zou
 {% for post in paginator.posts %}
 <div class="an-post">
 	<h3><a href="{{ post.url }}">{{ post.title | upcase }}</a></h3>
-	<h5>{{ post.date | date: "%B. %d, %Y" }}</h5>
+	<h5><i class="icon-calendar"></i>{{ post.date | date: "%B. %d, %Y" }}</h5>
 	<!-- 截取摘要 -->
 	{% if site.excerpt_separator %}
         <p>{{ post.excerpt | strip_html }}</p>
