@@ -3,7 +3,8 @@ layout: post
 title: beginning study with angularjs
 comments: true
 category: WEB
-tags: [angularjs]
+tags: 
+- angularjs
 ---
 AngularJS是一个用于动态WEB应用的结构化框架。AngularJS允许你使用默认的HTML语言作为你的模板语言，同时也允许你扩展HTML语法来清晰、简洁的表达你的应用组件。
 其中它的数据绑定和依赖注入能够帮助你减少一些你不得不写的代码。而且这些都发生在浏览器端，使得它可以成为任何服务器端技术的理想合作伙伴。<!--more-->
@@ -26,5 +27,7 @@ AngularJS是一个用于动态WEB应用的结构化框架。AngularJS允许你�
 |Injector（注入器）|依赖注入容器|
 |Module（模块）| 一个应用包含控制器、指定、服务、路由、过滤器等不同的部分，模块可以看做是装载应用的容器，由模块开启一个应用|
 |Service（服务）|视图中可重用的独立的业务逻辑|
+
+[AngularJS官网开发指南](https://docs.angularjs.org/guide/concepts)
 
 
