@@ -17,7 +17,7 @@ tags:
 应用将视图渲染并呈现给用户之前，视图中的模板会和作用域进行连接，然后应用会对DOM进行设置以便将属性变化通知给AngularJS。
 
 *作用域是应用状态的基础。基于动态绑定*，我们可以依赖视图在修改数据时立刻更新$scope，也可以依赖$scope在其发生变化时立刻重新渲染视图。
-
+<!--more-->
 ####视图和$scope
 AngularJS启动并生成视图时，会将根 ng-app 元素同$rootScope进行绑定。$rootScope是所有$scope对象的最上层。    
 AngularJS不会对不包含AngularJS特殊声明的元素进行任何处理。    
