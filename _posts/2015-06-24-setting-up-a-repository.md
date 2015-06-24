@@ -13,16 +13,13 @@ tags:
 `git init` 命令用于创建一个新的Git仓库。它可以将一个现有的、未受版本控制项目转换为Git仓库，或者初始化一个新的空仓库。在初始化仓库之前，大多数其它Git命令是不可用的，因此这个命令通常为你在运行一个新的项目之前的第一个命令。   
 执行`git init`命令，在项目的根目录下面创建了一个`.git`子目录，它包含这个仓库的所有重要的元数据。除了`.git`目录，现有项目保持不变。（不同于SVN，Git不需要在每一个子目录下面都有一个`.git`文件）     
 ####使用方法
-<pre><code>
-	git init
+<pre><code>git init
 </code></pre>
 将当前目录转换为一个Git仓库。这个命令添加了一个`.git`文件在当前目录下面，并且这个文件将能够开始记录项目的每一个版本信息。    
-<pre><code>
-	git init directory
+<pre><code>git init directory
 </code></pre>
 在一个指定的目录下面创建一个空的Git仓库。运行这个命令将会创建一个名为`directory`的文件，只包含`.git`子目录。
-<pre><code>
-	git init --bare directory
+<pre><code>git init --bare directory
 </code></pre>
 初始化一个空的Git仓库，但省略了工作目录（通常这个称为裸仓库）。创建共享仓库时应该总是使用`--bare`标志（具体请看下面的讨论）。按照惯例，使用`--bare`标志初始化的仓库目录名应该以`.git`结尾。例如，一个名为`my-project`的裸仓库应该存储在一个名为`my-project.git`目录里。     
 ####讨论
@@ -32,16 +29,13 @@ tags:
 使用`--bare`标志创建的仓库不存在一个工作目录，因此在此仓库中，无法编辑文件和提交更改。中心仓库应该总是以裸仓库的方式来创建，因为，推送分支到一个非裸仓库存在覆盖变化的可能性。考虑使用`--bare`方式标记一个仓库作为一个存储设备，而不是一个开发环境。这意味着，对于所有的Git工作流，中心仓库应该是裸仓库，本地开发者仓库应该是非裸仓库。    
 ![bare/non-bare](/img/git-1.png)    
 ####例子
-自从`git clone`是用于创建本地项目副本的一个更方便的方式， 使用`git init`创建一个中心仓库的一个更加常用的使用用例如下所示： 
-<pre><code>
-	ssh user@host  
-	cd path/above/repo    
-	git init --bare my-preject.git    
+自从`git clone`是用于创建本地项目副本的一个更方便的方式， 使用`git init`创建一个中心仓库的一个更加常用的使用用例如下所示：<pre><code>ssh user@host
+cd path/above/repo
+git init --bare my-preject.git
 </code></pre>
-首先，使用SSH服务进入将会包含你中心仓库的服务器。然后进入到你想存储项目的位置。最后使用带有`--bare`标志的初始化命令来创建一个中心存储仓库。      
-开发者将会使用：    
-<pre><code>
-	[clone](/tutorials/setting-up-a-repository/git-clone) my-project.git
+首先，使用SSH服务进入将会包含你中心仓库的服务器。然后进入到你想存储项目的位置。最后使用带有`--bare`标志的初始化命令来创建一个中心存储仓库。   
+
+开发者将会使用：<pre><code>[clone](/tutorials/setting-up-a-repository/git-clone) my-project.git
 </code></pre>
 在本地机器上面创建项目的副本。    
 ###git clone
@@ -49,12 +43,10 @@ tags:
 
 为了方便，在克隆的时候，会自动的创建一个称为原点（origin pointing）指向原始仓库的远程连接。这使本地仓库和中心仓库进行交互变得容易。
 ####使用方法
-<pre><code>
-	git clone repo
+<pre><code>git clone repo
 </code></pre>
 克隆位于`repo`的中心仓库到本地机器。原始仓库可以位于本地文件系统或者在一个通过HTTP或者SSH协议来访问的远程机器里。    
-<pre><code>
-	git clone repo directory
+<pre><code>git clone repo directory
 </code></pre>
 克隆一个位于`repo`的中心仓库到本地机器一个名为`directory`的文件中。    
 ####讨论
@@ -69,10 +61,9 @@ tags:
 
 ####例子
 下面的例子展示了怎样获取一个中心仓库的本地副本，中心仓库存储在服务器端，使用SSH协议的用户名为`john`访问`example.com`。
-<pre><code>
-	git clone ssh://john@example.com/path/to/my-project.git
-	cd my-project
-	# start working on the project
+<pre><code>git clone ssh://john@example.com/path/to/my-project.git
+cd my-project
+# start working on the project
 </code></pre>
 第一个命令是初始化一个新的Git仓库到你本地及其的`my-project`文件中，而且拥有者中心仓库的内容。然后，使用`cd`命令进入项目目录，便可以开始编辑文件，提交快照，以及和其他仓库进行交互。同时需要注意，`.git`的扩展在克隆的仓库中被省略。这反映本地副本是非裸仓库状态。
 
@@ -82,24 +73,19 @@ tags:
 ####使用方法
 `git config user.name name`       
 在当前仓库定义所有提交时需要使用的作者姓名。典型的，你也许想要使用 `--global` 标志来设置当前用户的配置选项。
-<pre><code>
-	git config --global user.name name
+<pre><code>git config --global user.name name
 </code></pre>
 定义作者名字，将被用于当前用户的提交信息。
-<pre><code>
-	git config --global user.email email
+<pre><code>git config --global user.email email
 </code></pre>
 定义作者的邮箱，将被用户当前用户的提交信息。
-<pre><code>
-	git config --global alias.<alias-name> <git-command>
+<pre><code>git config --global alias.<alias-name> <git-command>
 </code></pre>
 创建Git命令的简写      
-<pre><code>
-	git config --system core.editor <editor>
+<pre><code>git config --system core.editor <editor>
 </code></pre>
 在当前机器上面定义文本编辑器给所有用户。<editor>参数应该是一个启动期望的编辑器的命令（例如：vi）。
-<pre><code>
-	git config --global --edit
+<pre><code>git config --global --edit
 </code></pre>
 在编辑器中打开全局配置文件，用于手工编辑。
 
@@ -112,38 +98,34 @@ Git存储配置选项在三个独立的文件中，即允许你选择范围选�
 - $(prefix)/etc/gitconfig - 系统全局设置    
 
 当这些文件产生冲突，本地设置会覆盖用户设置，用户设置覆盖系统全局设置。如果你打开任意这些文件，你将会看见下面的信息：
-<pre><code>
-	[user]
-		name = John Smith
-		email = john@example.com
-	[alias]
-		st = status
-		co = checkout
-		br = branch
-		up = rebase
-		ci = commit
-	[core]
-		editor = vim
+<pre><code>[user]
+	name = John Smith
+	email = john@example.com
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	up = rebase
+	ci = commit
+[core]
+	editor = vim
 </code></pre>
 你可以手动编辑这些值，这和`git config`命令是完全相同的效果。
 ####例子
 首先，在安装完Git之后，你将想要配置你的姓名/邮箱以及自定义一些默认的设置。一个典型的初始化配置也许看起来如下所示：
-<pre><code>
-	# 告诉Git你是谁
-	git config --global user.name "John Smith"
-	git config --global user.email john@example.com
+<pre><code># 告诉Git你是谁
+git config --global user.name "John Smith"
+git config --global user.email john@example.com
 </code></pre>
-<pre><code>
-	# 选择你爱好的编辑器
-	git config --global core.editor vim
+<pre><code># 选择你爱好的编辑器
+git config --global core.editor vim
 </code></pre>
-<pre><code>
-	# 添加一些SVN似的别名
-	git config --global alias.st status
-	git config --global alias.co checkout
-	git config --global alias.br branch
-	git config --global alias.up rebase
-	git config --global alias.ci commit
+<pre><code># 添加一些SVN似的别名
+git config --global alias.st status
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.up rebase
+git config --global alias.ci commit
 </code></pre>
 这些配置会自动生成到`~/.gitconfig`文件中。
 
