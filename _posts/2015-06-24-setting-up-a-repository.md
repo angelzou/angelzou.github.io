@@ -34,7 +34,7 @@ tags:
 ####例子
 自从`git clone`是用于创建本地项目副本的一个更方便的方式， 使用`git init`创建一个中心仓库的一个更加常用的使用用例如下所示： 
 <pre><code>
-	ssh <user>@<host>    
+	ssh use@host  
 	cd path/above/repo    
 	git init --bare my-preject.git    
 </code></pre>
