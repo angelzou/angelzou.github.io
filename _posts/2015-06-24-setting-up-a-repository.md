@@ -2,7 +2,7 @@
 layout: post
 title: 建立Git仓库
 comments: true
-category: 翻译
+categories: [翻译, git]
 tags: 
 - git
 ---
@@ -35,7 +35,7 @@ git init --bare my-preject.git
 </code></pre>
 首先，使用SSH服务进入将会包含你中心仓库的服务器。然后进入到你想存储项目的位置。最后使用带有`--bare`标志的初始化命令来创建一个中心存储仓库。   
 
-开发者将会使用：<pre><code>[clone](/tutorials/setting-up-a-repository/git-clone) my-project.git
+开发者将会使用：<pre><code>[clone] (/tutorials/setting-up-a-repository/git-clone) my-project.git
 </code></pre>
 在本地机器上面创建项目的副本。    
 ###git clone
