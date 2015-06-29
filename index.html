@@ -9,9 +9,9 @@ title: Angel Zou
 	<h5><i class="icon-calendar"></i>{{ post.date | date: "%B. %d, %Y" }}</h5>
 	<!-- 截取摘要 -->
 	{% if site.excerpt_separator %}
-        <p>{{ post.excerpt | strip_html }}</p>
+        <p>{{ post.excerpt }}</p>
     {% else %}
-        <p>{{ post.content | strip_html }}</p>
+        <p>{{ post.content }}</p>
     {% endif %}
   	<a class="more" href="{{ post.url }}">Continue Reading →</a><span></span>
 </div>

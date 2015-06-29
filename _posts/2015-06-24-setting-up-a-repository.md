@@ -1,12 +1,15 @@
 ---
 layout: post
-title: 建立Git仓库
+title: Git基础——建立Git仓库
 comments: true
 categories: [翻译, git]
 tags: 
 - git
 ---
-[翻译]这个练习提供了最重要的Git命令的简要概述。     
+![git](/img/git-0.png)
+
+这个练习提供了最重要的Git命令的简要概述。     
+
 首先，建立一个仓库章节解释了你需要开始一个新的版本控制项目的所有工具。然后，接下来的章节介绍了你每天需要使用的Git命令。    
 在这个模块的最后，你应该能够创建一个Git仓库，用于妥善保管你项目中的记录快照，而且可以查看你的项目历史状态。<!--more-->    
 ###git init  
@@ -132,3 +135,5 @@ git config --global alias.ci commit
 
 ####原文地址
 [Setting up a repository](https://www.atlassian.com/git/tutorials/setting-up-a-repository)
+
+（本人英语水平有限，若翻译有误，请指出，谢谢！）

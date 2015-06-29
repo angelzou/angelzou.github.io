@@ -12,7 +12,7 @@ title: angelzou's resume
 		</div>
 		<div class="row">
 			<div class="col-md-12 t-middle">
-				<p>yuweizou.cn#gmail#com</p><!--more-->
+				<p>yuweizou.cn{at}gmail{dot}com</p><!--more-->
 			</div>
 		</div>
 	</div>
