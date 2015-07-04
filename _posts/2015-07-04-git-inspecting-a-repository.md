@@ -2,7 +2,7 @@
 layout: post
 title: Git基础-检查仓库
 comments: true
-categories: [翻译， Git]
+categories: [翻译, git]
 tags:
 - git
 ---
