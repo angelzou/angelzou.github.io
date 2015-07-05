@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Git基础-检查仓库
+title: [译]Git基础-检查仓库
 comments: true
 categories: [翻译, git]
 tags:
@@ -133,3 +133,6 @@ tags:
 
 	git log --oneline master..some-feature
 
+
+####原文地址：
+[Inspecting a repository](https://www.atlassian.com/git/tutorials/inspecting-a-repository)
