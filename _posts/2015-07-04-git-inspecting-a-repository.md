@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [译]Git基础-检查仓库
+title: 【译】Git基础-检查仓库
 comments: true
 categories: [翻译, git]
 tags:

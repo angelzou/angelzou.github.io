@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [译]Git基础——建立Git仓库
+title: 【译】Git基础——建立Git仓库
 comments: true
 categories: [翻译, git]
 tags: 

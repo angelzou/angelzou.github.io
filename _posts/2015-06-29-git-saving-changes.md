@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [译]Git基础——保存改变的记录
+title: 【译】Git基础——保存改变的记录
 comments: true
 categories: [翻译, git]
 tags: 
