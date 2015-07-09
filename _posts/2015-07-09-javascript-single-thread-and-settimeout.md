@@ -67,3 +67,4 @@ setTimeout的作用是将代码推迟到指定时间执行，如果指定时间�
 
 ####参考
 1. [JavaScript 运行机制详解：再谈Event Loop](http://www.ruanyifeng.com/blog/2014/10/event-loop.html)
+2. [定时器](http://javascript.ruanyifeng.com/bom/timer.html)
