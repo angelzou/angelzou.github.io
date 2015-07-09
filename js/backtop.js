@@ -1,11 +1,11 @@
 /**
  * Created by angelzou on 2015/7/6.
  */
-(function(){
+;(function(){
     var Top = function(){
-        this.tpl = "<div class='T-back-top hidden'><i class='arrow-up'></i></div>"
+        this.tpl = "<div class='T-back-top hidden'><i class='arrow-up'></i></div>";
         this._init();
-    }
+    };
     Top.prototype = {
         _init: function() {
             var that = this;
@@ -36,7 +36,7 @@
             //console.log(document.documentElement.scrollTop || document.body.scrollTop);
             return document.documentElement.scrollTop || document.body.scrollTop;
         }
-    }
+    };
 
     var top = new Top();
 })();
