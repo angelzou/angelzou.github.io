@@ -88,28 +88,38 @@ title: angelzou's resume
 					<li>
 						<div class="event-time">
 							<span class="icon-calendar"></span>
-							<span class="time">2015.01</span></div>
-						<h4>湖北高校思政网</h4>
-						<p>主要工作：1.任职项目负责人及指导新生进行网站开发工作 2.编写样例代码指定编程风格 3.推行Git版本控制工具进行项目的合作开发。</p>
+							<span class="time">2015.07-至今</span></div>
+						<h4>蘑菇街</h4>
+						<p> 1.学习doT.js和Less；
+                  			2.熟悉开发环境和学习前辈代码；
+                  			3.参与“美妆7月鲜肉活动”需求，主要是写前端页面。（http://www.mogujie.com/act/beautymarkup?ptp=1.6MNZgcFr.YqCmyo65.23.Wn5xpW&qq-pf-to=pcqq.c2c）
+						</p>
 					</li>
 					<li>
 						<div class="event-time">
 							<span class="icon-calendar"></span>
-							<span class="time">2014.12</span></div>
+							<span class="time">2015.01-2015.06</span></div>
+						<h4>湖北高校思政网</h4>
+						<p>主要工作：1.任职项目负责人及指导新生进行网站开发工作；2.编写样例代码指定编程风格； 3.推行Git版本控制工具进行项目的合作开发。</p>
+					</li>
+					<li>
+						<div class="event-time">
+							<span class="icon-calendar"></span>
+							<span class="time">2014.12-2015.04</span></div>
 						<h4>基于Web的信息标注和抓取</h4>
 						<p>主要工作：通过Python写的爬虫脚本抓取网页载入到本地；基于JS进行元素定位和标注；并将标注信息存入MySQL数据库。</p>
 					</li>
 					<li>
 						<div class="event-time">
 							<span class="icon-calendar"></span>
-							<span class="time">2014.02</span></div>
+							<span class="time">2014.02-2014.03</span></div>
 						<h4>第壹阶教育公众号开发</h4>
 						<p>主要工作：基于jQuery Mobile写页面；参与基于.NET语言的后台模块的开发</p>
 					</li>
 					<li>
 						<div class="event-time">
 							<span class="icon-calendar"></span>
-							<span class="time">2013.07</span></div>
+							<span class="time">2013.07-2013.09</span></div>
 						<h4>湖北省高级人民法院网站开发</h4>
 						<p>主要工作：完成“院长信箱”和“举报信箱”两个模块的页面交互；后台关于各个法院文书的批量上传、统计、统计信息导出等功能。</p>
 					</li>
@@ -145,16 +155,16 @@ title: angelzou's resume
 			        <span>CSS 75%</span></div>
        			</div>
        			<div class="progress">
-       				<div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="59" aria-valuemin="0" aria-valuemax="100" style="width: 59%">
-			        <span>JAVASCRIPT 59%</span></div>
+       				<div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="59" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+			        <span>JAVASCRIPT 70%</span></div>
        			</div>
        			<div class="progress">
        				<div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
 			        <span>HTML5 30%</span></div>
        			</div>
        			<div class="progress">
-       				<div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-			        <span>CSS3 20%</span></div>
+       				<div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+			        <span>CSS3 30%</span></div>
        			</div>
        		</div>
        		<div class="col-md-6">
