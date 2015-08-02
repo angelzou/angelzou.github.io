@@ -113,35 +113,35 @@ MDN中的一篇文章[向严格模式过渡](https://developer.mozilla.org/zh-CN
 
 ####二、CSS有哪几种选择器？怎么判断优先级？
 CSS选择器有：   
-	1. 通配符选择器：*     
-	2. 元素选择器，eg：div、p        
-	3. ID选择器，eg：#ID    
-	4. 类选择器，eg：.className     
-	5. 后代选择器，eg：E F     
-	6. 子元素选择器，eg：E>F。  (IE6不支持)    
-	7. 相邻兄弟元素选择器，eg：E + F。  (IE6不支持)    
-	8. 通用兄弟选择器，eg：E ~ F。  (IE6不支持)     
-	9. 群组选择器，eg：E, F, ...    
-	10. 属性选择器     
-	11. 伪类选择器      
-	12. 伪元素，`::first-letter`，`::first-line`，`::before`，`::after`，`::selection`     
 
-具体请看w3cplus里面的几篇文章   
-[基本选择器](http://www.w3cplus.com/css3/basic-selectors)
-[属性选择器](http://www.w3cplus.com/css3/attribute-selectors)
-[伪类选择器](http://www.w3cplus.com/css3/pseudo-class-selector)
+1.  通配符选择器：*   
+2.  元素选择器，eg：div、p        
+3.  ID选择器，eg：#ID    
+4.  类选择器，eg：.className     
+5.  后代选择器，eg：E F     
+6.  子元素选择器，eg：E>F。  (IE6不支持)    
+7.  相邻兄弟元素选择器，eg：E + F。  (IE6不支持)    
+8.  通用兄弟选择器，eg：E ~ F。  (IE6不支持)     
+9.  群组选择器，eg：E, F, ...    
+10. 属性选择器     
+11. 伪类选择器      
+12. 伪元素，`::first-letter`，`::first-line`，`::before`，`::after`，`::selection`     
+
+具体请看w3cplus里面的几篇文章：   
+[基本选择器](http://www.w3cplus.com/css3/basic-selectors)    
+[属性选择器](http://www.w3cplus.com/css3/attribute-selectors)   
+[伪类选择器](http://www.w3cplus.com/css3/pseudo-class-selector)   
 [选择器的优化](http://www.w3cplus.com/css/css-selector-performance)
 
 优先级是根据CSS的权重等级来确定的。   
-1. #ID：+100
-2. .className，属性选择器，伪类选择器：+10
-3. 元素选择器，伪元素：+1   
-在计算的时候，进行累加。
-4. 需要注意的是，行内样式是：+1000
+1. #ID：+100   
+2. .className，属性选择器，伪类选择器：+10   
+3. 元素选择器，伪元素：+1         
+4. 需要注意的是，行内样式是：+1000    
+在计算权重的时候，进行累加。
 
-```css
 	body #id .class a:hover
-```
+
 
 上面的例子的最终权重为122，`#id`为100，`.class`和`:hover`都为10，`body`和`a`都为1。
 
