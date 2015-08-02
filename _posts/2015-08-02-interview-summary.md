@@ -21,10 +21,10 @@ MDN中的一篇文章[向严格模式过渡](https://developer.mozilla.org/zh-CN
 > 当函数通过call和apply调用时，如果传入的thisvalue参数是一个null和undefined除外的原始值(字符串,数字,布尔值)，则this的值会成为那个原始值对应的包装对象，如果thisvalue参数的值是undefined或null，则this的值会指向全局对象.在严格模式中，this的值就是thisvalue参数的值，没有任何类型转换。
 <!--more-->
 使用场景（可以直接看[详解JavaScript中的this](http://foocoder.com/blog/xiang-jie-javascriptzhong-de-this.html/)这篇文章）：   
-1. 全局中的this，将会指向全局对象，在浏览器中则是window。
+
+1.  全局中的this，将会指向全局对象，在浏览器中则是window。
 	
 		console.log(this);
-	
 
 2. 当函数作为对象的方法调用时，this指向该对象。
 
