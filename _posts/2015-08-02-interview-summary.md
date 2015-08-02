@@ -23,110 +23,108 @@ MDN中的一篇文章[向严格模式过渡](https://developer.mozilla.org/zh-CN
 使用场景（可以直接看[详解JavaScript中的this](http://foocoder.com/blog/xiang-jie-javascriptzhong-de-this.html/)这篇文章）：   
 1. 全局中的this，将会指向全局对象，在浏览器中则是window。
 	
-```javascript
-	console.log(this);
-```
+		console.log(this);
+	
 
 2. 当函数作为对象的方法调用时，this指向该对象。
 
-```javascript
-	var foo = {
-		name: "angelzou",
-		sayName: function() {
-			console.log("Hello, " + this.name);
-		}
-	};
-	foo.sayName(); // Hello, angelzou
-```
+
+		var foo = {
+			name: "angelzou",
+			sayName: function() {
+				console.log("Hello, " + this.name);
+			}
+		};
+		foo.sayName(); // Hello, angelzou
+
 3. 只作为单纯的函数调用的话，this指向全局window。（这里请注意严格模式）
 
-```
-	function foo1(x) {
-		this.x = x;
-	}
-	foo1(2);
-	console.log(x); // 2。严格模式下会报错Uncaught TypeError: Cannot set property 'x' of undefined
-```
+	
+		function foo1(x) {
+			this.x = x;
+		}
+		foo1(2);
+		console.log(x); // 2。严格模式下会报错Uncaught TypeError: Cannot set property 'x' of undefined
+	
 
 4. 构造函数的this指向新创建的对象。
 
-```
-	function Foo2(x) {
-		this.x = x;
-		console.log(this);
-	}
-	new Foo2(2); //Foo2 {x: 2}
-```
+	
+		function Foo2(x) {
+			this.x = x;
+			console.log(this);
+		}
+		new Foo2(2); //Foo2 {x: 2}
+	
 
 5. 嵌套函数中的this不会继承父级函数的this，需要将this变量进行暂存，保存到另外一个变量中才行。
 
-```
-	// eg 1
-	var name = "outer";
-	var foo3 = {
-		name: "inner",
-		sayHello: function() {
-			console.log(this.name);
-			var subSayHello = function() {
-				console.log(this.name);
-			}
-			subSayHello();
-		}
-	}
-	foo3.sayHello(); //先输出inner，后输出outer
 	
-	// eg 2
-	var name = "outer";
-	var foo3 = {
-		name: "inner",
-		sayHello: function() {
-			var that = this;
-			console.log(that.name);
-			var subSayHello = function() {
-				console.log(that.name);
+		// eg 1
+		var name = "outer";
+		var foo3 = {
+			name: "inner",
+			sayHello: function() {
+				console.log(this.name);
+				var subSayHello = function() {
+					console.log(this.name);
+				}
+				subSayHello();
 			}
-			subSayHello();
 		}
-	}
-	foo3.sayHello();  // 都输出inner
+		foo3.sayHello(); //先输出inner，后输出outer
+		
+		// eg 2
+		var name = "outer";
+		var foo3 = {
+			name: "inner",
+			sayHello: function() {
+				var that = this;
+				console.log(that.name);
+				var subSayHello = function() {
+					console.log(that.name);
+				}
+				subSayHello();
+			}
+		}
+		foo3.sayHello();  // 都输出inner
 
-```
 
 6. call和apply函数中的this，指向传入的对象。
 
-```
-	var name = "outer";
-	var foo4 = {
-		name: "inner",
-		sayHello: function() {
-			var that = this;
-			console.log(that.name);
-			var subSayHello = function() {
+	
+		var name = "outer";
+		var foo4 = {
+			name: "inner",
+			sayHello: function() {
+				var that = this;
 				console.log(that.name);
+				var subSayHello = function() {
+					console.log(that.name);
+				}
+				subSayHello();
 			}
-			subSayHello();
 		}
-	}
-	foo4.sayHello.call(foo4); // 都输出inner
-	foo4.sayHello.call(window); // 都输出outer
-```
+		foo4.sayHello.call(foo4); // 都输出inner
+		foo4.sayHello.call(window); // 都输出outer
+	
 
 7. DOM事件中，传入的this是指向对应的DOM元素的
 
 ####二、CSS有哪几种选择器？怎么判断优先级？
-CSS选择器有：
-1. 通配符选择器：*     
-2. 元素选择器，eg：div、p        
-3. ID选择器，eg：#ID    
-4. 类选择器，eg：.className     
-5. 后代选择器，eg：E F     
-6. 子元素选择器，eg：E>F。  (IE6不支持)    
-7. 相邻兄弟元素选择器，eg：E + F。  (IE6不支持)    
-8. 通用兄弟选择器，eg：E ~ F。  (IE6不支持)     
-9. 群组选择器，eg：E, F, ...    
-10. 属性选择器     
-11. 伪类选择器      
-12. 伪元素，`::first-letter`，`::first-line`，`::before`，`::after`，`::selection`     
+CSS选择器有：   
+	1. 通配符选择器：*     
+	2. 元素选择器，eg：div、p        
+	3. ID选择器，eg：#ID    
+	4. 类选择器，eg：.className     
+	5. 后代选择器，eg：E F     
+	6. 子元素选择器，eg：E>F。  (IE6不支持)    
+	7. 相邻兄弟元素选择器，eg：E + F。  (IE6不支持)    
+	8. 通用兄弟选择器，eg：E ~ F。  (IE6不支持)     
+	9. 群组选择器，eg：E, F, ...    
+	10. 属性选择器     
+	11. 伪类选择器      
+	12. 伪元素，`::first-letter`，`::first-line`，`::before`，`::after`，`::selection`     
 
 具体请看w3cplus里面的几篇文章   
 [基本选择器](http://www.w3cplus.com/css3/basic-selectors)
