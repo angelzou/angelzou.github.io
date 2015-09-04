@@ -21,7 +21,7 @@ IE6/7 本身是不支持 `display: inline-block` 的。
 
 因此，在IE6/7下，将`inline`元素转化为`inline-block`元素，触发了hasLayout，从而使*内联元素*拥有了*行内块元素*的一些特性（可以像块元素一样设置内容的样式），呈现和其他浏览器一样的效果。    
 而对于将`block`元素转化为`inline-block`元素，虽然也同样触发了hasLayout，可是对于*块级元素*，它本身就是**行布局**，所以触发后，依然是行布局，依旧会产生换行。
-
+<!--more-->
 因此使用 `display: inline-block` 实现水平布局，在IE6/7下，我们需要考虑两种情况：   
 
 -  `block` 元素 `inline-block` 化  
