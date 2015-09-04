@@ -1,6 +1,6 @@
 {% include head.html %}
 			<div class="wrap">
-				<h1>{{ page.title | upcase }}</h1>
+				<h1>{{ page.title }}</h1>
 				<h5><i class="icon-calendar"></i>{{ page.date | date: "%B. %d, %Y" }}</h5>
 				<section class="blog-content">
 					{{ content|remove:"&lt;!--more--&gt;" }}				
