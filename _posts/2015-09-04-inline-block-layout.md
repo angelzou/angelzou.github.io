@@ -19,8 +19,8 @@ IE6/7 本身是不支持 `display: inline-block` 的。
 
 在IE6/7下使用`display: inline-block` 会触发 IE6/7的 **hasLayout** （IE8以后已经不在使用， IE6/7下的一些bug很多时候就是和这个有关的。这时就需要触发hasLayout，一般的触发方法和触发BFC（[Block Formatting Contexts](http://angelzou.github.io/09-02-2015-css-block-formatting-contexts.html)）是一样的。本人觉得最好使的方法就是使用 `zoom: 1;`）。
 
-因此，在IE6/7下，将`inline`元素转化为`inline-block`元素，触发了hasLayout，从而使*内联元素*拥有了*行内块元素*的一些特性（可以像块元素一样设置内容的样式），呈现和其他浏览器一样的效果。    
-而对于将`block`元素转化为`inline-block`元素，虽然也同样触发了hasLayout，可是对于*块级元素*，它本身就是**行布局**，所以触发后，依然是行布局，依旧会产生换行。
+因此，在IE6/7下，将`inline`元素转化为`inline-block`元素，触发了hasLayout，从而使内联元素拥有了行内块元素的一些特性（可以像块元素一样设置内容的样式），呈现和其他浏览器一样的效果。    
+而对于将`block`元素转化为`inline-block`元素，虽然也同样触发了hasLayout，可是对于块级元素，它本身就是**行布局**，所以触发后，依然是行布局，依旧会产生换行。
 <!--more-->
 因此使用 `display: inline-block` 实现水平布局，在IE6/7下，我们需要考虑两种情况：   
 
