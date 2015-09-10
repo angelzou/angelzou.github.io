@@ -47,7 +47,7 @@ title: angelzou's resume
 		</div>
 		<div class="row">
 			<div class="col-md-12">
-				<img class="my-pic" src="/img/my-pic.jpg" alt="">
+				<img class="my-pic" src="/assets/img/my-pic.jpg" alt="">
 			</div>
 		</div>
 
