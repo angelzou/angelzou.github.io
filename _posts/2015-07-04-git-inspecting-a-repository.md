@@ -6,7 +6,7 @@ categories: [翻译, git]
 tags:
 - git
 ---
-![inspecting](/img/git-inspecting-1.png)
+![inspecting](/assets/img/git-inspecting-1.png)
 
 ###git status
 `git status` 命令用于显示工作目录和暂存区的状态。它可以让你查看Git中，哪些内容已经暂存，哪些未暂存，还有哪些文件没有被追踪。`git status` 命令输出的状态没有展示任何有关提交项目的历史信息。对于这个，你需要使用 `git log` 命令。
@@ -62,7 +62,7 @@ tags:
 ###git log
 `git log`命令展示已经提交的快照信息。它让你列出项目的历史信息，过滤它，而且查找指定的改变版本。而`git status` 能够让你检查工作目录和暂存区，`git log`只是操作提交的历史。
 
-![git status & git log](/img/git-inspecting-2.png)
+![git status & git log](/assets/img/git-inspecting-2.png)
 
 能够用几种方式自定义日志的输出，从简单的过滤提交到以用户定义的格式完整的展示日志。一些常用的`git log`命令的配置接下来会介绍。
 

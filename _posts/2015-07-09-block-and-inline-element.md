@@ -33,10 +33,10 @@ tags: [块元素, 行内元素]
 
 ###列举下下（MDN） 
 1. [块元素列表](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Block-level_elements)     
-![block elements](/img/block-elems.png)
+![block elements](/assets/img/block-elems.png)
 
 2. [行内元素列表](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elemente)     
-![inline elements](/img/inline-elem.png)
+![inline elements](/assets/img/inline-elem.png)
 
 
 

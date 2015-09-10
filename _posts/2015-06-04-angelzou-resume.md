@@ -92,7 +92,9 @@ title: angelzou's resume
 						<h4>蘑菇街</h4>
 						<p> 1.学习doT.js和Less；
                   			2.熟悉开发环境和学习前辈代码；
-                  			3.参与“美妆7月鲜肉活动”需求，主要是写前端页面。（http://www.mogujie.com/act/beautymarkup?ptp=1.6MNZgcFr.YqCmyo65.23.Wn5xpW&qq-pf-to=pcqq.c2c）
+                  			3.参与“美妆7月鲜肉活动”需求，主要是写前端页面。4，参与数据监控平台项目，一个人负责前端页面的编写和交互工作，同时也参与后台的控制器部分的编写工作，使用PHP语言；修改基于AngularJS的Grafana框架源码。
+感触：1. 主动和需求方沟通和明确需求。2. 需要多多关注新知识，能够快速的入门并使用该技术到项目开发当中，进行敏捷开发。
+
 						</p>
 					</li>
 					<li>

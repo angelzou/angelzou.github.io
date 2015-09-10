@@ -156,7 +156,7 @@ title属性不是必须的，是规定元素的额外信息，有视觉效果，
 ```html
 	<img src="" alt="i am alt" tilte="i am title">
 ```
-![img-alt-title.png](/img/img-alt-title.png)
+![img-alt-title.png](/assets/img/img-alt-title.png)
 
 
 ####四、谈谈对闭包的理解
@@ -173,7 +173,7 @@ title属性不是必须的，是规定元素的额外信息，有视觉效果，
 	outer();
 
 
-![closure](/img/closure-1.png)
+![closure](/assets/img/closure-1.png)
 
 
 特性：	

@@ -33,7 +33,7 @@ AngularJS创建实时模板来代替视图，而不是将数据合并进模板�
 </code>
 </pre>
 效果如下图所示：    
-![eg1](/img/angular-ex-1.png)
+![eg1](/assets/img/angular-ex-1.png)
 
 ####第二个例子（使用控制器和模块）：    
 <pre><code class="html">&lt;!DOCTYPE html&gt;
@@ -72,7 +72,7 @@ angular.module('app', []) // 声明模块
 });
 </code></pre>
 效果如下图所示：   
-![eg1](/img/angular-ex-1-2.png)
+![eg1](/assets/img/angular-ex-1-2.png)
 
 在AngularJS中，模块是定义应用的最主要的方式。模块包含了主要的应用代码。一个应用可以包含多个模块，每一个模块都包含了定义具体功能的代码。    
 

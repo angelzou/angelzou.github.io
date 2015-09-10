@@ -1,3 +1,0 @@
-.T-back-top{position:fixed;bottom:150px;right:35px;width:40px;height:40px;-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;background-color:#5f93b7;opacity:.7;filter:alpha(opacity=70);cursor:pointer;}
-.arrow-up{position:absolute;left:10px;border:10px solid transparent;border-bottom:10px solid #e6f0f5;}
-.arrow-up:before{content:'';position:absolute;left:-10px;top:-5px;border:10px solid transparent;border-bottom:10px solid #5f93b7;}

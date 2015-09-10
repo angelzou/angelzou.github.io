@@ -33,7 +33,7 @@ tags: [单线程, setTimeout]
 
     主线程从“任务队列”中读取事件，这个过程是循环不断的，所以整个的这种运行机制又称为Event Loop（事件循环）。
 
-![eventloop](/img/eventloop.png)  
+![eventloop](/assets/img/eventloop.png)  
 
 ###setTimeout()
 定时器事件会放置在“任务队列”中。需要等待“执行栈”中的事件执行完之后才会执行。

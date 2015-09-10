@@ -6,7 +6,7 @@ categories: [翻译, git]
 tags: 
 - git
 ---
-![git-save](/img/git-save-1.png)
+![git-save](/assets/img/git-save-1.png)
 
 
 ###git add
@@ -33,7 +33,7 @@ tags:
 
 开发一个项目，涉及基本的编辑/保存（stage）/提交模式。首先，在工作目录中编辑你的文件。当你准备保存项目当前状态的一个副本，你使用`git add`保存当前的变化。之后，你使用`git commit`提交临时快照到项目的历史记录里。   
 
-![stage](/img/git-save-2.png)
+![stage](/assets/img/git-save-2.png)
 
 `git add`命令不应该和`svn add`命令混淆，`svn add`是提交一个文件到存储库。相反的，`git add`工作于更抽象级别的变化。这意味着`git add`命令在你改变一个文件的每一次都需要被唤醒，然而，`svn add`命令对于每一个文件只需要唤醒一次。`git add`这种方式听起来好像很冗余，但是这样的工作流使项目更容易被组织。
 
@@ -85,9 +85,9 @@ tags:
 
 除了SVN和Git实际上的区别之外，其底层的实现也遵循完全不同的设计理念。不同于SVN跟踪文件的差异，Git版本控制模型是基于快照的。例如，一个SVN提交由和添加到仓库中原始文件进行比较组成。Git，另一方面，记录在每次提交中，每一个文件的全部内容。
 
-![svn](/img/git-save-4.png)    
+![svn](/assets/img/git-save-4.png)    
 
-![git](/img/git-save-6.png)
+![git](/assets/img/git-save-6.png)
 
 这使得Git的很多操作比SVN要快很多，因为文件的特定版本不需要从它的不同分支中进行“组装”——在Git的内部数据库中，每个文件的完整版本是立即有效的。
 
