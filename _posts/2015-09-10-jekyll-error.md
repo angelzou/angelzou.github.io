@@ -19,5 +19,5 @@ tags: [jekyll]
 
 	exclude: ["node_modules"]
 
-更改完成之后，便能正确执行了，如下图： 
+更改完成之后，便能正确执行了，如下图：    
 ![jekyll right](/assets/img/20150910/jekyll-right.png)
